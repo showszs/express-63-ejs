@@ -1,3 +1,7 @@
 export const getRootHandler = (req, res) => {
-    res.end('Get Root Route')
+    const title = "Root"
+
+    const greet = "This is Root page"
+
+    res.render('root',  {title, greet} )
 }
